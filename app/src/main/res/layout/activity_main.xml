@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/calculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="66dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_height="110dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ac_bt"
+                android:text="AC"
+                android:gravity="center"
+                android:background="@drawable/rounded_button"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="75dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/delete_bt"
+                android:text="⌫"
+                android:gravity="center"
+                android:background="@drawable/rounded_button_delete"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="75dp"/>
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content" android:paddingTop="20dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sete_bt"
+                android:text="7"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/oito_bt"
+                android:text="8"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nove_bt"
+                android:text="9"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/multiplicacao_bt"
+                android:text="×"
+                android:gravity="center"
+                android:background="@drawable/botao_operador"
+                android:textColor="@android:color/black"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/quatro_bt"
+                android:text="4"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cinco_bt"
+                android:text="5"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/seis_bt"
+                android:text="6"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/subtracao_bt"
+                android:text="−"
+                android:gravity="center"
+                android:background="@drawable/botao_operador"
+                android:textColor="@android:color/black"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/um_bt"
+                android:text="1"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/dois_bt"
+                android:text="2"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tres_bt"
+                android:text="3"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/soma_bt"
+                android:text="+"
+                android:gravity="center"
+                android:background="@drawable/botao_operador"
+                android:textColor="@android:color/black"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </TableRow>
+
+        <TableRow android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingLeft="10dp" android:paddingRight="10dp">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ponto_bt"
+                android:text="."
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/zero_bt"
+                android:text="0"
+                android:gravity="center"
+                android:background="@drawable/botao_numero"
+                android:textColor="@color/off_white"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/resultado_bt"
+                android:text="="
+                android:gravity="center"
+                android:background="@drawable/botao_operador"
+                android:textColor="@android:color/black"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/divisao_bt"
+                android:text="/"
+                android:gravity="center"
+                android:background="@drawable/botao_operador"
+                android:textColor="@android:color/black"
+                android:layout_margin="6dp"
+                android:textSize="20sp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
